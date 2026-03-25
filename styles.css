@@ -3,15 +3,15 @@
   --color-bg: #0f0f1a;
   --color-surface: #1a1a2e;
   --color-surface-2: #16213e;
-  --color-primary: #6c63ff;
-  --color-primary-dark: #564fd4;
+  --color-primary: #FF4500;
+  --color-primary-dark: #CC3700;
   --color-accent: #ff6584;
   --color-text: #e0e0e0;
   --color-text-muted: #9090aa;
   --color-border: #2a2a4a;
   --font-sans: 'Segoe UI', system-ui, -apple-system, sans-serif;
   --radius: 12px;
-  --shadow: 0 4px 24px rgba(108, 99, 255, 0.15);
+  --shadow: 0 4px 24px rgba(255, 69, 0, 0.15);
   --transition: 0.3s ease;
 }
 
@@ -199,7 +199,7 @@ img { max-width: 100%; display: block; }
   content: '';
   position: absolute;
   width: 600px; height: 600px;
-  background: radial-gradient(circle, rgba(108,99,255,0.15) 0%, transparent 70%);
+  background: radial-gradient(circle, rgba(255,69,0,0.15) 0%, transparent 70%);
   top: 50%; left: 50%;
   transform: translate(-50%, -50%);
   pointer-events: none;
@@ -221,7 +221,7 @@ img { max-width: 100%; display: block; }
   font-weight: 800;
   line-height: 1.1;
   margin-bottom: 1rem;
-  background: linear-gradient(135deg, #fff 40%, var(--color-primary));
+  background: linear-gradient(135deg, #fff 40%, #FF4500);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -292,7 +292,7 @@ img { max-width: 100%; display: block; }
   display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow: 0 0 40px rgba(108,99,255,0.3);
+  box-shadow: 0 0 40px rgba(255,69,0,0.3);
 }
 
 .avatar-placeholder svg { width: 120px; height: 120px; }
@@ -332,7 +332,7 @@ img { max-width: 100%; display: block; }
   background-position: center;
 }
 
-.project-image--1 { background: linear-gradient(135deg, #6c63ff 0%, #ff6584 100%); }
+.project-image--1 { background: linear-gradient(135deg, #FF4500 0%, #ff6584 100%); }
 .project-image--2 { background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%); }
 .project-image--3 { background: linear-gradient(135deg, #f7971e 0%, #ffd200 100%); }
 
@@ -345,7 +345,7 @@ img { max-width: 100%; display: block; }
 .project-tags { display: flex; flex-wrap: wrap; gap: 0.5rem; margin-bottom: 1.2rem; }
 
 .project-tags span {
-  background: rgba(108,99,255,0.15);
+  background: rgba(255,69,0,0.15);
   color: var(--color-primary);
   padding: 0.25rem 0.75rem;
   border-radius: 20px;
@@ -453,7 +453,7 @@ img { max-width: 100%; display: block; }
 .form-group textarea:focus {
   outline: none;
   border-color: var(--color-primary);
-  box-shadow: 0 0 0 3px rgba(108,99,255,0.2);
+  box-shadow: 0 0 0 3px rgba(255,69,0,0.2);
 }
 
 .form-status {
