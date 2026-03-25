@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav id="navbar">
+    <div class="nav-container">
+      <a class="nav-logo" href="#hero">Alex Dev</a>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="hero">
+    <div class="hero-content">
+      <p class="hero-greeting">Hi, I'm</p>
+      <h1 class="hero-name">Alex Developer</h1>
+      <p class="hero-tagline">Full-Stack Developer &amp; UI Enthusiast</p>
+      <div class="hero-actions">
+        <a href="#projects" class="btn btn-primary">View My Work</a>
+        <a href="#contact" class="btn btn-outline">Get In Touch</a>
+      </div>
+    </div>
+    <div class="hero-scroll-hint">
+      <span>Scroll down</span>
+      <div class="scroll-arrow"></div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about">
+    <div class="container">
+      <h2 class="section-title">About Me</h2>
+      <div class="about-grid">
+        <div class="about-image">
+          <div class="avatar-placeholder">
+            <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <circle cx="50" cy="35" r="20" fill="#6c63ff"/>
+              <ellipse cx="50" cy="80" rx="30" ry="20" fill="#6c63ff"/>
+            </svg>
+          </div>
+        </div>
+        <div class="about-text">
+          <p>
+            I'm a passionate full-stack developer with a love for building clean,
+            performant, and accessible web applications. I enjoy turning complex
+            problems into simple, beautiful solutions.
+          </p>
+          <p>
+            When I'm not coding, you'll find me exploring new technologies,
+            contributing to open-source projects, or enjoying a good cup of coffee
+            while reading tech blogs.
+          </p>
+          <a href="#contact" class="btn btn-primary">Say Hello</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects">
+    <div class="container">
+      <h2 class="section-title">Projects</h2>
+      <div class="projects-grid">
+
+        <article class="project-card">
+          <div class="project-image project-image--1"></div>
+          <div class="project-info">
+            <h3>E-Commerce Platform</h3>
+            <p>A full-stack online store with cart, auth, and payment integration built with React and Node.js.</p>
+            <div class="project-tags">
+              <span>React</span><span>Node.js</span><span>MongoDB</span>
+            </div>
+            <div class="project-links">
+              <a href="#" class="btn btn-sm">Live Demo</a>
+              <a href="#" class="btn btn-sm btn-outline">GitHub</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-image project-image--2"></div>
+          <div class="project-info">
+            <h3>Task Manager App</h3>
+            <p>A productivity app with drag-and-drop boards, labels, and real-time collaboration.</p>
+            <div class="project-tags">
+              <span>Vue.js</span><span>Firebase</span><span>CSS3</span>
+            </div>
+            <div class="project-links">
+              <a href="#" class="btn btn-sm">Live Demo</a>
+              <a href="#" class="btn btn-sm btn-outline">GitHub</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-image project-image--3"></div>
+          <div class="project-info">
+            <h3>Weather Dashboard</h3>
+            <p>A beautiful weather app with 7-day forecasts, location search, and animated conditions.</p>
+            <div class="project-tags">
+              <span>JavaScript</span><span>OpenWeather API</span><span>CSS</span>
+            </div>
+            <div class="project-links">
+              <a href="#" class="btn btn-sm">Live Demo</a>
+              <a href="#" class="btn btn-sm btn-outline">GitHub</a>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills">
+    <div class="container">
+      <h2 class="section-title">Skills</h2>
+      <div class="skills-grid">
+        <div class="skill-category">
+          <h3>Frontend</h3>
+          <ul>
+            <li><span class="skill-name">HTML &amp; CSS</span><div class="skill-bar"><div class="skill-fill" data-level="95"></div></div></li>
+            <li><span class="skill-name">JavaScript</span><div class="skill-bar"><div class="skill-fill" data-level="90"></div></div></li>
+            <li><span class="skill-name">React</span><div class="skill-bar"><div class="skill-fill" data-level="85"></div></div></li>
+            <li><span class="skill-name">Vue.js</span><div class="skill-bar"><div class="skill-fill" data-level="75"></div></div></li>
+          </ul>
+        </div>
+        <div class="skill-category">
+          <h3>Backend</h3>
+          <ul>
+            <li><span class="skill-name">Node.js</span><div class="skill-bar"><div class="skill-fill" data-level="85"></div></div></li>
+            <li><span class="skill-name">Python</span><div class="skill-bar"><div class="skill-fill" data-level="75"></div></div></li>
+            <li><span class="skill-name">PostgreSQL</span><div class="skill-bar"><div class="skill-fill" data-level="70"></div></div></li>
+            <li><span class="skill-name">MongoDB</span><div class="skill-bar"><div class="skill-fill" data-level="80"></div></div></li>
+          </ul>
+        </div>
+        <div class="skill-category">
+          <h3>Tools &amp; Other</h3>
+          <ul>
+            <li><span class="skill-name">Git &amp; GitHub</span><div class="skill-bar"><div class="skill-fill" data-level="90"></div></div></li>
+            <li><span class="skill-name">Docker</span><div class="skill-bar"><div class="skill-fill" data-level="65"></div></div></li>
+            <li><span class="skill-name">Linux / CLI</span><div class="skill-bar"><div class="skill-fill" data-level="80"></div></div></li>
+            <li><span class="skill-name">Figma</span><div class="skill-bar"><div class="skill-fill" data-level="70"></div></div></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <div class="container">
+      <h2 class="section-title">Get In Touch</h2>
+      <p class="section-subtitle">Have a project idea or just want to say hi? My inbox is always open!</p>
+      <form id="contact-form" novalidate>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Your name" required />
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="your@email.com" required />
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="6" placeholder="Tell me about your project..." required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary btn-full">Send Message</button>
+        <p id="form-status" class="form-status" aria-live="polite"></p>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="footer-links">
+        <a href="https://github.com" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">Twitter</a>
+      </div>
+      <p class="footer-copy">&copy; 2026 Alex Developer. Built with ❤️ and plain HTML/CSS/JS.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
